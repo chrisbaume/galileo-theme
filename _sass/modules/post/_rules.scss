@@ -44,7 +44,6 @@
 
     .post-date {
         display: block;
-        border-top: 1px solid $border-color;
         border-bottom: 1px solid $border-color;
         text-align: center;
         color: $legal-text-color;
@@ -64,9 +63,11 @@
     }
 
     .post-body {
+        p, ul {
+          line-height: $post-line-height;
+        }
         p {
             text-align: justify;
-            line-height: $post-line-height;
             margin-bottom: 25px;
         }
     }

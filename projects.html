@@ -1,0 +1,8 @@
+---
+layout: page
+title: Projects
+---
+
+{% for project in site.projects %}
+<p><a href="{{ project.url }}">{{ project.title }}</a> ({{ project.startyear }}-{{ project.endyear }})</p>
+{% endfor %}

@@ -1,12 +1,15 @@
 ---
-layout: default
+layout: page 
+title: Hello
 ---
 
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-  {% include post.html post=post content=post.content %}
-{% endfor %}
-
-{% if paginator.total_pages > 1 %}
-    {% include pagination.html maxPages=5 %}
-{% endif %}
+<p>
+<img src="assets/mugshot.jpg" class="right" width="175" />
+I am a Senior Research Engineer at BBC Research and Development and a doctoral
+researcher at the University of Surrey’s Centre for Vision, Speech and Signal
+Processing. My current research is on developing and testing novel interfaces
+for navigating and editing media. My other research interests include spatial
+audio, music information retrieval, audio codec evaluation and artificial
+bandwidth extension of speech. I have also previously worked on video quality
+analysis and systems architecture. You can read more about my research here, or
+in my blog.</p>

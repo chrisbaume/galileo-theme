@@ -6,17 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Travelog
-author: Your name
-author_link: https://whatever.you/like
-author_description: A few words to describe you & your face
-email: your-email@domain.com
+title: Chris Baume
+author: Chris Baume
+author_link: http://baume.uk
+author_description: My name is Chris
+email: chris@baume.uk
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is an awesome description of my site
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://baume.uk" # the base hostname & protocol for your site
 
 # Picturefill
 # A responsive image polyfill: http://scottjehl.github.io/picturefill/
@@ -28,13 +26,29 @@ picturefill: false
 typekit_kit_id: kwf5dox
 
 # Build settings
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-youtube]
 markdown: kramdown
-permalink: pretty
+permalink: /notes/:year/:month/:day/:title/
+highlighter: rouge
 
 # Pagination
-paginate: 5
+paginate: 3
+paginate_path: "/notes/page:num/"
 
 # Sass
 sass:
     style: :compressed
+
+collections:
+  publications:
+    output: false
+  presentations:
+    output: false
+  media:
+    output: false
+  projects:
+    output: true
+  notes:
+    output: true
+  travel:
+    output: true

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://bbcarp.org.uk/m4/dmrn/#/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<link rel="stylesheet" href="./20121218 DMRN_files/reveal.min.css">
+		<link rel="stylesheet" href="./20121218 DMRN_files/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="./20121218 DMRN_files/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script><link rel="stylesheet" href="./20121218 DMRN_files/paper.css" type="text/css" media="print">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body data-pinterest-extension-installed="cr2.0.5" style="transition: -webkit-transform 0.8s ease;"><div id="StayFocusd-infobar" style="display:none;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+		<div class="reveal center">
+			<div class="slides">
+				<section class="present" style="top: -61.5px; display: block;">
+					<audio controls="">
+						<source src="./20121218 DMRN_files/440Hz.wav" type="audio/wav">
+						Your browser does not support the audio tag.
+					</audio>
+				</section>
+				<section class="future" style="top: -224px; display: block;">
+					<h2>Training a music mood classifier with production music</h2>
+					<p>&nbsp;</p>
+					<p style="text-align: right;">Chris Baume</p>
+					<p style="text-align: right;">BBC Research and Development</p>
+					<p style="text-align: right;">bbc.co.uk/rd/sound</p>
+				</section>
+				<section class="future" style="top: -293px; display: block;">
+					<h2>Making Musical Mood Metadata</h2>
+					<img src="./20121218 DMRN_files/m4-blue.png" style="border-width: 0">
+				</section>
+				<section class="future" style="top: -334px; display: block;">
+					<h2>The Desktop Jukebox</h2>
+						<img src="./20121218 DMRN_files/dj.png" width="500">
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Similar track recommendation</h2>
+						<img src="./20121218 DMRN_files/dj-recommend.png" width="500">
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Music visualisation</h2>
+					<p><img src="./20121218 DMRN_files/vis1.png" width="200"> <img src="./20121218 DMRN_files/vis2.png" width="200"></p>
+					<p><img src="./20121218 DMRN_files/vis3.png" width="200"> <img src="./20121218 DMRN_files/vis4.png" width="200"></p>
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Music mood</h2>
+						<img src="./20121218 DMRN_files/moodspace.png" width="500">
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+				<h2>What is production music?</h2>
+				<p>&nbsp;</p>
+				<p style="text-align: left;">
+					<b>106778.wav</b>
+				</p>
+				<p style="text-align: left;">catchy, gimmicky, novelty, kitsch, cheesy, quirky, retro, chic, vintage, cool-chilled, flame, hot, grooves, kitsch, quirky, fun, modern, comedy, vocal, children, demented, disruptive, fx, kids</p>
+				<p>
+				</p><p>&nbsp;</p>
+				<audio controls="">
+					<source src="./20121218 DMRN_files/prodmusic-example.mp3" type="audio/mp3">
+					Your browser does not support the audio tag.
+				</audio>
+				<p></p>
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Production music statistics</h2>
+					<p>&nbsp;</p>
+					<p>128,024 tracks from 3,878 albums</p>
+					<p>Mean of 41 keywords per track</p>
+					<p>40% genre, 30% mood, 10% instrumentation</p>
+					<p>36,196 unique keywords</p>
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Popular keywords</h2>
+					<p><img src="./20121218 DMRN_files/tagcloud.png" style="border-width: 0"></p>
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Popular keywords</h2>
+					<p><img src="./20121218 DMRN_files/keywords.png" width="800" style="border-width: 0"></p>
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Unpopular keywords</h2>
+					<div align="center">
+					<table>
+					<tbody><tr><td width="10%">Kazoogaloo</td><td width="10%">Popadom</td></tr>
+					<tr><td>Squirtation</td><td>Violin-gotcha</td></tr>
+					<tr><td>Muskrat</td><td>Testosterone-overload</td></tr>
+					<tr><td>Bacterial</td><td>Kelp-seaweed</td></tr>
+					<tr><td>Stutter-hop</td><td>Pogo-inducing</td></tr>
+					<tr><td>Ear-plugs</td><td>Trevor</td></tr>
+					<tr><td>Bambattarama</td><td>Badaboum</td></tr>
+					<tr><td>Ambivalence</td><td>Hyper-bongo</td></tr>
+					<tr><td>Funsize</td><td>Kangaroove</td></tr>
+					</tbody></table></div>
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Mood prediction workflow</h2>
+					<p>&nbsp;</p>
+					<p>Features → Machine learning → Mood</p>
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Feature extractors</h2>
+					<p>&nbsp;</p>
+					<p>MIR Toolbox, MA Toolbox, PsySound3</p>
+					<p>Marsyas, CLAM, LibXtract, Aubio, YAAFE</p>
+					<p>&nbsp;</p>
+					<p>Sonic annotator + Vamp plugins</p>
+				</section>
+				<section class="stack future" style="top: -20px; display: none;">
+					<section style="top: -20px;">
+					<h2>Results</h2>
+					<table>
+					<thead>
+					<tr><th>Feature</th><th>Length</th><th>Accuracy</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Bark band coefficients</td><td>52</td><td>71.22</td></tr>
+					<tr><td>NNLS chromagram</td><td>24</td><td>70.15</td></tr>
+					<tr><td>MFCC (20 coefficients)</td><td>40</td><td>70.15</td></tr>
+					<tr><td>Intensity ratio (9 bands)</td><td>18</td><td>69.72</td></tr>
+					<tr><td>Spectral contrast (7 bands)</td><td>28</td><td>69.66</td></tr>
+					<tr><td>NNLS bass chromagram</td><td>24</td><td>68.02</td></tr>
+					<tr><td>MFCC (12 coefficients)</td><td>24</td><td>66.31</td></tr>
+					<tr><td>Intensity ratio (7 bands)</td><td>14</td><td>65.67</td></tr>
+					<tr><td>MFCC (7 coefficients)</td><td>14</td><td>63.33</td></tr>
+					<tr><td>Key strength</td><td>48</td><td>62.05</td></tr>
+					<tr><td>Chromagram</td><td>24</td><td>60.77</td></tr>
+					<tr><td>6D Tonal Content Space</td><td>12</td><td>60.34</td></tr>
+					<tr><td>Intensity ratio (5 bands)</td><td>10</td><td>58.21</td></tr>
+					</tbody></table>
+					</section>
+					<section style="top: -20px;">
+					<table>
+					<thead>
+					<tr><th>Feature</th><th>Length</th><th>Accuracy</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Spectral centroid (log)</td><td>2</td><td>50.32</td></tr>
+					<tr><td>Average deviation</td><td>2</td><td>48.61</td></tr>
+					<tr><td>Spectral flatness</td><td>2</td><td>48.40</td></tr>
+					<tr><td>Spectral centroid (linear)</td><td>2</td><td>48.19</td></tr>
+					<tr><td>Variance</td><td>2</td><td>47.55</td></tr>
+					<tr><td>Spectral inharmonicity</td><td>2</td><td>47.12</td></tr>
+					<tr><td>Total loudness</td><td>2</td><td>46.91</td></tr>
+					<tr><td>NNLS harmonic change</td><td>2</td><td>46.91</td></tr>
+					<tr><td>Spectral standard deviation</td><td>2</td><td>45.84</td></tr>
+					<tr><td>Spectral rolloff</td><td>2</td><td>45.42</td></tr>
+					<tr><td>Intensity</td><td>2</td><td>45.20</td></tr>
+					<tr><td>Spectral slope</td><td>2</td><td>45.20</td></tr>
+					<tr><td>Spectral flux (L1 norm)</td><td>2</td><td>44.99</td></tr>
+					</tbody></table>
+					</section>
+					<section style="top: -20px;">
+					<table>
+					<thead>
+					<tr><th>Feature</th><th>Length</th><th>Accuracy</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Non-zero count</td><td>2</td><td>44.78</td></tr>
+					<tr><td>Spectral irregularity (Krimphoff)</td><td>2</td><td>44.56</td></tr>
+					<tr><td>Smooth power slope</td><td>2</td><td>43.71</td></tr>
+					<tr><td>Rhythm strength</td><td>1</td><td>43.50</td></tr>
+					<tr><td>Average onset frequency</td><td>1</td><td>43.28</td></tr>
+					<tr><td>Spectral smoothness</td><td>2</td><td>43.28</td></tr>
+					<tr><td>Zero-crossing rate</td><td>2</td><td>42.64</td></tr>
+					<tr><td>Consonance</td><td>2</td><td>42.43</td></tr>
+					<tr><td>Spectral sharpness</td><td>2</td><td>42.22</td></tr>
+					<tr><td>Spectral spread</td><td>2</td><td>41.15</td></tr>
+					<tr><td>Highest value</td><td>2</td><td>40.72</td></tr>
+					<tr><td>Spectral irregularity(Jensen)</td><td>2</td><td>40.72</td></tr>
+					<tr><td>Third tristimulus</td><td>2</td><td>40.09</td></tr>
+					<tr><td>Spectral flux (L2 norm)</td><td>2</td><td>39.87</td></tr>
+					</tbody></table>
+					</section>
+					<section style="top: -20px;">
+					<table>
+					<thead>
+					<tr><th>Feature</th><th>Length</th><th>Accuracy</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>RMS energy (20ms window)</td><td>2</td><td>38.81</td></tr>
+					<tr><td>Lowest value</td><td>2</td><td>38.59</td></tr>
+					<tr><td>Second tristimulus</td><td>2</td><td>38.59</td></tr>
+					<tr><td>Temporal centroid</td><td>1</td><td>38.59</td></tr>
+					<tr><td>RMS energy (10ms window)</td><td>2</td><td>36.67</td></tr>
+					<tr><td>First tristimulus</td><td>2</td><td>36.03</td></tr>
+					<tr><td>Scaled smooth power slope</td><td>2</td><td>35.82</td></tr>
+					<tr><td>Peak-valley ratio</td><td>1</td><td>34.54</td></tr>
+					<tr><td>Log attack time</td><td>1</td><td>34.54</td></tr>
+					<tr><td>Mean correlation peak</td><td>1</td><td>34.12</td></tr>
+					<tr><td>Tonal content function</td><td>2</td><td>33.05</td></tr>
+					<tr><td>Low energy ratio (&lt; 0.2mean)</td><td>1</td><td>31.77</td></tr>
+					</tbody></table>
+					</section>
+					<section style="top: -20px;">
+					<table>
+					<thead>
+					<tr><th>Feature</th><th>Length</th><th>Accuracy</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Tempo (QMUL method)</td><td>1</td><td>29.91</td></tr>
+					<tr><td>Tempo (BBC method)</td><td>1</td><td>29.85</td></tr>
+					<tr><td>Odd/even ratio</td><td>2</td><td>29.64</td></tr>
+					<tr><td>Skewness</td><td>2</td><td>29.42</td></tr>
+					<tr><td>Spectral average deviation</td><td>2</td><td>29.42</td></tr>
+					<tr><td>Spectral flatness</td><td>2</td><td>29.21</td></tr>
+					<tr><td>Kurtosis</td><td>1</td><td>29.21</td></tr>
+					<tr><td>Spectral kurtosis</td><td>1</td><td>29.21</td></tr>
+					<tr><td>Spectral skewness</td><td>1</td><td>29.21</td></tr>
+					<tr><td>Low energy ratio(&lt; mean)</td><td>1</td><td>29.00</td></tr>
+					<tr><td>Spectral crest</td><td>2</td><td>29.00</td></tr>
+					</tbody></table>
+					</section>
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Value for money</h2>
+					<table>
+					<thead>
+					<tr><th>Feature</th><th>Length</th><th>(Acc-Base)/Len</th></tr>
+					</thead>
+					<tbody>
+					<tr><td>Rhythm strength</td><td>1</td><td>14.29</td></tr>
+					<tr><td>Average onset frequency</td><td>1</td><td>14.07</td></tr>
+					<tr><td>Spectral centroid (log)</td><td>2</td><td>10.55</td></tr>
+					<tr><td>Average deviation</td><td>2</td><td>9.70</td></tr>
+					<tr><td>Spectral flatness</td><td>2</td><td>9.59</td></tr>
+					<tr><td>Spectral centroid (linear)</td><td>2</td><td>9.49</td></tr>
+					<tr><td>Temporal centroid</td><td>1</td><td>9.38</td></tr>
+					<tr><td>Variance</td><td>2</td><td>9.17</td></tr>
+					<tr><td>Spectral inharmonicity</td><td>2</td><td>8.96</td></tr>
+					<tr><td>Total loudness</td><td>2</td><td>8.85</td></tr>
+					<tr><td>NNLS harmonic change</td><td>2</td><td>8.85</td></tr>
+					</tbody></table>
+				</section>
+				<section class="future" style="top: -20px; display: none;">
+					<h2>Findings</h2>
+					<ul>
+					<li>Peak result of 71% is unusually high</li>
+					<li>Intensity ratio surprisingly performs best</li>
+					<li>Spectral and harmonic features outperform others</li>
+					<li>Rhythmic features are the best 'value'</li>
+					<li>Some features perform at baseline</li>
+					<li>79.31% accuracy with vector length of 49</li>
+					</ul>
+				</section>
+				<section class="future" style="top: -287.5px; display: block;">
+					<h2>Parallelisation</h2>
+					<p><img src="./20121218 DMRN_files/n8.jpg" width="500"></p>
+					<p>5,312 Intel Sandy Bridge cores</p>
+					<p>283TB storage over 10Gbit/s link</p>
+					<p>1.5 years → 12 hours</p>
+				</section>
+				<section class="future" style="top: -170px; display: block;">
+					<h2>Next steps</h2>
+					<ul>
+					<li>Multi-dimensional mood model</li>
+					<li>Optimal feature combinations</li>
+					<li>User testing</li>
+					<li>Integrate into Desktop Jukebox</li>
+					</ul>
+				</section>
+				<section class="future" style="top: -190px; display: block;">
+					<h2>Thanks for listening!</h2>
+					<p>&nbsp;</p>
+					<p>chris.baume@bbc.co.uk</p>
+					<p>&nbsp;</p>
+					<p>bbcarp.org.uk/m4/dmrn</p>
+				</section>
+			</div>
+		<div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><div class="navigate-left"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="state-background"></div><div class="pause-overlay"></div></div>
+
+		<script src="./20121218 DMRN_files/head.min.js"></script>
+		<script src="./20121218 DMRN_files/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script><script type="text/javascript" src="./20121218 DMRN_files/highlight.js"></script><script type="text/javascript" src="./20121218 DMRN_files/zoom.js"></script><script type="text/javascript" src="./20121218 DMRN_files/notes.js"></script>
+
+	
+
+<span style="border-radius: 2px !important; text-indent: 20px !important; width: auto !important; padding: 0px 4px 0px 0px !important; text-align: center !important; font-style: normal !important; font-variant: normal !important; font-weight: bold !important; font-stretch: normal !important; font-size: 11px !important; line-height: 20px !important; font-family: &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important; color: rgb(255, 255, 255) !important; background: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjYmQwODFjIj48L3BhdGg+PC9nPjwvc3ZnPg==&quot;) 3px 50% / 14px 14px no-repeat rgb(189, 8, 28) !important; position: absolute !important; opacity: 1 !important; display: none; cursor: pointer !important; border: none !important; -webkit-font-smoothing: antialiased !important;">Save</span></body></html>
